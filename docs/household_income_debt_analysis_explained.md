@@ -1,8 +1,10 @@
 # Household Income and Debt Analysis Notebook: A Plain-Language Guide
 
-This document explains **every cell** in [`household_income_debt_analysis.ipynb`](../household_income_debt_analysis.ipynb). It describes what the code does, why each step is needed, what the printed results mean, and what the analysis cannot prove.
+This document explains **every cell in the earlier extended version** of the notebook, preserved at [`backups/household_income_debt_analysis_before_single_source.ipynb`](../backups/household_income_debt_analysis_before_single_source.ipynb). It describes what the code does, why each step is needed, what the printed results mean, and what the analysis cannot prove.
 
-The notebook is written partly in Thai because the NSO data uses Thai labels. This guide keeps the original labels in code formatting so that each explanation can be matched directly to the notebook and CSV files.
+The active [`household_income_debt_analysis.ipynb`](../household_income_debt_analysis.ipynb) now uses only `data/raw/SFD_SPB0801.csv`. Its current single-source results are in [`household_income_debt_analysis_results.md`](household_income_debt_analysis_results.md). The supplementary sections below document the archived extended version and are not run by the active notebook.
+
+The notebook is written partly in Thai because the NSO data uses Thai labels. This guide keeps the original labels in code formatting so that each explanation can be matched directly to the archived notebook and CSV files.
 
 ---
 

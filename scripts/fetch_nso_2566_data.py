@@ -12,7 +12,6 @@ from urllib.request import Request, urlopen
 
 import pandas as pd
 
-
 TARGET_YEAR = 2566
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 RAW_DATA_DIR = REPOSITORY_ROOT / "data" / "raw"
@@ -32,7 +31,6 @@ TABLES = {
     "SES_41_05_2566.csv": ("SES_41_05", "YEAR"),
 }
 
-
 def download_csv(table: str) -> pd.DataFrame:
     request = Request(
         API_TEMPLATE.format(table=table),
@@ -40,7 +38,6 @@ def download_csv(table: str) -> pd.DataFrame:
     )
     with urlopen(request, timeout=120) as response:
         return pd.read_csv(BytesIO(response.read()))
-
 
 def main() -> None:
     RAW_DATA_DIR.mkdir(parents=True, exist_ok=True)
